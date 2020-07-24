@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+ 
+/* ========================================================= Nav Css ============================================================== */
+
+header{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+        -webkit-box-shadow: 0 5px 80px -10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 5px 80px -10px rgba(0, 0, 0, 0.2);
+}
+
+nav{
+    background-color: #fff;
+    min-height: 7vh;
+    position: sticky;
+}
+ 
+.navbar-brand{
+    font-size: 45px;
+    font-family: 'Gabriola';
+    font-weight: bold;
+    color: #000;
+    margin-left: 40px;
+}
+
+.navbar-brand i{
+    font-size: 30px;
+    margin-left: 8px;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-right: 40px;
+}
+
+ul {
+    margin-right: 70px;
+    letter-spacing: 3px;
+}
+
+ul li{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Gabriola';
+    color: #000;
+}
+
+
+.nav-item:hover{
+    color: #fff;
+}
+
+.active-act{
+    border-bottom: 2px solid #ff0000;
+}
+
+.carousel-inner{
+    filter: drop-shadow(0px 5px 3px #000);
+    animation: up 3s ease;
+}
+
+@keyframes up{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.carousel-control-prev-icon{
+    border: 30px solid lime;
+    border-width: 20px;
+    border-radius: 20px;
+}
+
+.carousel-control-next-icon{
+    border: 30px solid lime;
+    border-width: 20px;
+    border-radius: 20px;
+}
+/* ======================================================= End of Nav Css ========================================================= */
+
+
+
+/* ==================================================== Section Site ===============================================================*/
+
+.site-display{
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+}
+
+.header h2{
+    color: #000;
+    font-size: 45px;
+    font-family: 'Gabriola';
+    font-weight: bold;
+}
+
+.text p{
+    color: #000;
+    font-size: 20px;
+    font-family: 'Gabriola';
+    padding-top: 14px;
+    line-height: 39px;
+}
+
+.btn{
+    background-color: #808080;
+    border: 1px solid #808080;
+    font-family: 'Gabriola';
+    font-family: 25px;
+}
+
+.btn:hover{
+    background-color: transparent !important;
+    color: #ff0000;
+    border: 2px solid #808080;
+    font-weight: bold;
+}
+
+.site-display-image{
+    width: 100%;
+    animation: right 5s ease;
+    filter: drop-shadow(0px 5px 3px #000);
+}
+
+.site-display-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.tap{
+    animation: left 3s ease;
+}
+
+@keyframes left{
+    0%{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes right{
+    0%{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* =========================================================== End Of Section Site =================================================*/
+
+
+/* =========================================================Site Section===========================================================*/
+
+.site-section{
+    padding: 7em 0;
+}
+
+.bg-light{
+    background-color: #f8f9fa !important
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h3{
+    color: gray;
+    font-size: 50px;
+    font-family: 'Gabriola';
+    font-weight: bold;
+    letter-spacing: 9px;
+}
+
+.text-center p{
+    color: gray;
+    font-family: 'Gabriola';
+    letter-spacing: 2px;
+}
+
+.btn-primary{
+    border-radius: 1px;
+}
+
+p .btn:hover{
+    color: #000;
+    font-weight: 500;
+    box-shadow: 0 5px 80px -10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.text-primary{
+    color: #000;
+}
+
+/* ==================================================== End Of Site Section ========================================================*/
+
+
+/* ===================================================== Most Popular ==============================================================*/
+
+    .container-carousel{
+        padding: 5em;
+    }
+
+/* ====================================================== End Of Most Popular ======================================================*/
+
+
+/* ============================================== Subscribers Css ================================================================= */
+
+ .counters{
+    margin-top: 7%;
+    color: #000;
+    padding: 40px 20px;
+}
+
+
+.head h5{
+    text-align: left;
+    font-family: 'Gabriola';
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.head{
+    animation: ops 3s ease;
+}
+
+@keyframes ops{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.head p{
+    text-align: left;
+    font-family: 'Gabriola';
+    font-size: 20px;
+}
+
+.site-lads{
+    padding-top: 4em;
+}
+
+.site-counter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3em;
+    text-align: center;
+}
+
+.site-counter i{
+    font-size: 34px;
+    color: skyblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.counter{
+    padding-bottom: 10px;
+    font-size: 43px;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Gabriola';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.counters .container-counter{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.container-counter{
+    background-color: lightskyblue;
+    padding: 20px 20px 20px 20px;
+}
+
+.site-display-image{
+    animation: tape 3s ease;
+    filter: drop-shadow(0px 5px 3px #000);
+}
+
+.taps{
+    animation: taps 3s ease;
+}
+
+@keyframes tape{
+    0%{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes taps{
+    0%{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/* ============================================ End Of Subscribers Css =========================================================== */
+
+/* ================================================== Footer Css ================================================================= */
+
+.site-footer {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 1em 0;
+    /* line-height: 1.7; */
+    background-color: skyblue;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.copyright p{
+    color: #000;
+}
+
+
+/* ==================================================== End of Footer Css ======================================================== */
+
+
+/* ====================================================== Cover-Bg Css =========================================================== */
+
+.cover-bg img{
+    width: 100%;
+    height: 100%;
+    animation: drop 3s ease;
+
+}
+
+.image-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.transition-image img{
+    width: 100%;
+    height: 100%;
+    animation: drop 3s ease;
+}
+.transition-image{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+}
+
+.transition-image:hover{
+    opacity: 2;
+}
+
+/* ==================================================== End of Cover-Bg Css ====================================================== */
+
+/* ==================================================== End of Cover-Bg Css ====================================================== */
+
+.multi-header h3{
+    margin-top: 20px;
+    font-size: 30px;
+    color: #000;
+    letter-spacing: normal;
+}
+
+.multi-header i{
+    font-size: 25px;
+}
+
+.multiple{
+    width: 100%;
+    filter: drop-shadow(0px 5px 3px #000);
+}
+
+.multiple img{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 5px 3px #000);
+    animation: drop 3s ease;
+}
+
+@media screen and (max-width: 768px){
+    .multiple img{
+        width: 80%;
+        height: auto;
+    }
+
+
+    .multiple{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* ======================================================All Media Queries Css===================================================== */
+
+/* ====================================== Nav Media Query ============================================*/
+
+@media screen and (max-width: 768px){
+    header{
+        position: realtive;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+        -webkit-box-shadow: 0 5px 80px -10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 5px 80px -10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-brand{
+        font-size: 30px;
+    }
+
+    .navbar-brand i{
+        font-size: 25px;
+        margin-left: 8px;
+    }
+
+    .navbar-toggler{
+        font-size: 15px;
+    }
+
+    ul li{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Gabriola';
+        color: #000;
+    }
+
+    ul{
+        margin-top: 20px;
+        letter-spacing: 3px;
+    }
+
+     .active-act{
+        border-bottom: 2px solid #ff0000;
+        width: 19%;
+
+    }
+}    
+
+/* =============================== End Of Nav Media Query =============================================*/
+
+/* =============================== .Header Media Query ================================================*/
+
+@media screen and (max-width: 768px){
+    .header h2{
+        font-size: 25px;
+    }
+
+    .text p{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .btn{
+        font-size: 12px;
+    }
+
+    .btn:hover{
+        background-color: transparent !important;
+        color: #ff0000;
+        border: 2px solid #808080;
+        font-weight: bold;
+    }
+
+    .site-display-image{
+        width: 100%;
+    }
+
+    .site-display-image img{
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+/* ==================================== End Of .Header Media Query ============================================*/
+
+/* ======================================= Section Site Media Query ===========================================*/
+
+@media screen and (max-width: 768px){
+    h3{
+        font-size: 25px;
+        letter-spacing: 7px;
+        font-weight: bolder;
+    }
+
+    .text-center p{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    p .btn{
+        font-size: 10px;
+    }
+}
+
+/* ======================================== End Of Section Site Media Query ===================================*/
+
+/* ======================================== Subscibers Media Query ============================================*/
+
+@media screen and (max-width: 768px){
+    .counters{
+        margin-top: 5%;
+    }
+
+    .head h5{
+        font-size: 30px;
+    }
+
+    .head p{
+        font-size: 20px;
+    }
+
+    .site-lads{
+        padding-top: 2em;
+    }
+
+    .counters{
+        padding: 40px 20px;
+    }
+
+    .counters .container-counter{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counters .container-counter > div:nth-of-type(1),
+    .container-counter > div:nth-of-type(2){
+        border-bottom: 1px #000 solid;
+        padding-bottom: 20px;
+    }
+}
+
+/* ==================================== End Of Subscirbers Media Query ========================================*/
+
+/* =========================================== Footer Media Query ============================================*/
+@media screen and (max-width: 768px){
+
+    .foot-header h6{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .foot-link{
+        font-size: 1em;
+    }
+
+    .foot-info{
+        line-height: 2.0em;
+    }
+    
+    .copyright i{
+        line-height: 1.0em;
+        font-size: 15px;
+    }
+    
+    .copyright p{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+}
+
+/* ================================== End Of Footer Media Query ============================================*/
+
+/* ======================================================End Of All Media Queries Css============================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
